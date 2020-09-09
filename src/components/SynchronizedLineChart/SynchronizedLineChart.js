@@ -36,7 +36,6 @@ export default class SynchronizedLineChart extends PureComponent {
     return (
       <Card title="SynchronizedLineChart">
         <div>
-          <h4>A demo of synchronized AreaCharts</h4>
           <LineChart
             width={500}
             height={200}
@@ -52,7 +51,6 @@ export default class SynchronizedLineChart extends PureComponent {
             <Tooltip />
             <Line type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
           </LineChart>
-          <p>Maybe some other content</p>
           <LineChart
             width={500}
             height={200}
