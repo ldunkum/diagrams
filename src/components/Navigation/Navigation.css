@@ -11,3 +11,23 @@
   float: right;
   margin: 6px 0 0;
 }
+.Navigation {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+}
+.Navigation a {
+  margin: 0 5px;
+  color: #ccc;
+  border: none;
+  text-decoration: none;
+  border-bottom: 1px dotted #ccc;
+  /*transition-delay: border-bottom 1s;*/
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.Navigation a:hover {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}

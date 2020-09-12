@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Interaktiv from "routes/Interaktiv/Interaktiv"
+import Statisch from "routes/Statisch/Statisch"
 import Header from 'components/Header/Header';
-import SimpleLineChart from 'components/SimpleLineChart/SimpleLineChart';
-import SynchronizedLineChart from 'components/SynchronizedLineChart/SynchronizedLineChart';
-import SimpleBarChart from 'components/SimpleBarChart/SimpleBarChart';
-import BrushBarChart from "components/BrushBarChart/BrushBarChart";
-import CustomActiveShapePieChart from "components/CustomActiveShapePieChart/CustomActiveShapePieChart";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <Router>
       <Header/>
-      <SimpleLineChart/>
-      <SynchronizedLineChart/>
-      <SimpleBarChart/>
-      <BrushBarChart/>
-      <CustomActiveShapePieChart />
-    </div>
+      <Switch>
+        <Route exact path="/">
+          <Statisch />
+        </Route>
+        <Route path="/interaktiv">
+          <Interaktiv />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
-
-export default App;
