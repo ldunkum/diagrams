@@ -5,7 +5,7 @@ import './Card.css'
 export default function Card ({ children, title }) {
     return (
       <div className="card">
-        <div className="card-details">
+        <div className="">
           <h3>{title}</h3>
         </div>
         {children}
