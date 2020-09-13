@@ -9,12 +9,18 @@ import BrushBarChart from "components/BrushBarChart/BrushBarChart";
 import CustomActiveShapePieChart from "components/CustomActiveShapePieChart/CustomActiveShapePieChart";
 import SimpleRadarChart from "components/SimpleRadarChart/SimpleRadarChart";
 import { Paper } from "@material-ui/core";
+import StackedAreaChart from "components/StackedAreaChart/StackedAreaChart";
 
 export default function Interaktiv() {
   return (
     <div className="App">
       <Container maxWidth="100%">
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={4}>
+            <Paper>
+              <StackedAreaChart />
+            </Paper>
+          </Grid>
           <Grid item xs={12} sm={4}>
             <Paper>
               <SimpleLineChart />
@@ -27,12 +33,12 @@ export default function Interaktiv() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper>
-              <BrushBarChart />
+              <SimpleRadarChart />
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper>
-              <SynchronizedLineChart />
+              <BrushBarChart />
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4}>
@@ -42,9 +48,9 @@ export default function Interaktiv() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper>
-              <SimpleRadarChart />
+              <SynchronizedLineChart />
             </Paper>
-          </Grid>
+          </Grid> 
         </Grid>
       </Container>
     </div>

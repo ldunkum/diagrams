@@ -53,7 +53,7 @@ export default class SimpleRadarChart extends PureComponent {
 
   render() {
     return (
-      <Card title="SimpleBarChart">
+      <Card title="SimpleRadarChart">
         <RadarChart
           cx={250}
           cy={250}
