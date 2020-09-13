@@ -1,18 +1,14 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Interaktiv from "routes/Interaktiv/Interaktiv"
-import Statisch from "routes/Statisch/Statisch"
-import Header from 'components/Header/Header';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Interaktiv from "routes/Interaktiv/Interaktiv";
+import Statisch from "routes/Statisch/Statisch";
+import Header from "components/Header/Header";
+import "./App.css";
 
 export default function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <Switch>
         <Route exact path="/">
           <Statisch />
