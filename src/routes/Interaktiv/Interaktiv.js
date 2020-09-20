@@ -16,37 +16,37 @@ export default function Interaktiv() {
     <div className="App">
       <Container maxWidth="100%">
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
             <Paper>
               <StackedAreaChart />
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
             <Paper>
               <SimpleLineChart />
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
             <Paper>
               <SimpleBarChart />
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
             <Paper>
               <SimpleRadarChart />
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
             <Paper>
               <BrushBarChart />
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
             <Paper>
               <CustomActiveShapePieChart />
             </Paper>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
             <Paper>
               <SynchronizedLineChart />
             </Paper>
